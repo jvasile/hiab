@@ -1,0 +1,30 @@
+# Hackfest in a Box
+
+##  Jukebox
+
+## Etherpad
+
+ * with wiki styling
+
+ * Lightning Talk signup
+
+ * Human search engine query signup
+
+## File dump
+
+ * dir to put files to share
+
+ * dir for presentations that automatically gets sent to the computer attached to the projector
+
+ * dir for photos that get slurped into a hackfest gallery (serve a URL w/ slideshow)
+
+## Photo Gallery
+
+## Gateway
+
+Allows content to be viewed (rw or ro) by people via the internet
+
+
+Administrator gives a list of emails to the program.  Or users
+sign up with their email over the LAN.  They then get sent a
+magic url that is their login token.
