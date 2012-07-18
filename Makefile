@@ -4,16 +4,19 @@
 
 all: etherpad
 
+var:
+	mkdir -p var
+
 etc:
 	mkdir -p etc
 
 vendor:
 	mkdir -p vendor
 
-vendor/etherpad-lite: vendor etc
+vendor/etherpad-lite: vendor etc var
 	git clone 'git://github.com/Pita/etherpad-lite.git' vendor/etherpad-lite
-	mv vendor/etherpad-lite/var wiki_pages
-	ln -s ../../wiki_pages vendor/etherpad-lite/var
+	mv vendor/etherpad-lite/var var/wiki_pages
+	ln -s ../../var/wiki_pages vendor/etherpad-lite/var
 	ln -s ../../etc/etherpad-lite.json vendor/etherpad-lite/settings.json
 
 vendor/etherpad-lite/node_modules/sqlite3: vendor/etherpad-lite
@@ -31,5 +34,5 @@ update: etherpad
 
 
 clean:
-	rm -rf vendor
+	rm -rf vendor var 
 	rm -rf \#* .\#*
