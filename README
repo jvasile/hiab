@@ -70,4 +70,4 @@ the LAN.  They then get sent a magic url that is their login token.
  
  * sqlite3 - Back end for etherpad-lite
  
-`apt-get install node.js npm sqlite`
+`apt-get install node.js npm sqlite3`
