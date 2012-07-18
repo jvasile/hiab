@@ -19,13 +19,10 @@ vendor/etherpad-lite: vendor etc var
 	ln -s ../../var/wiki_pages vendor/etherpad-lite/var
 	ln -s ../../etc/etherpad-lite.json vendor/etherpad-lite/settings.json
 
-vendor/etherpad-lite/node_modules/sqlite3: vendor/etherpad-lite
-	cd vendor/etherpad-lite; npm install sqlite3
-
 vendor/etherpad-lite/node_modules/ep_linkify: vendor/etherpad-lite 
 	cd vendor/etherpad-lite; npm install ep_linkify
 
-etherpad: vendor/etherpad-lite vendor/etherpad-lite/node_modules/ep_linkify vendor/etherpad-lite/node_modules/sqlite3
+etherpad: vendor/etherpad-lite vendor/etherpad-lite/node_modules/ep_linkify
 
 update: etherpad
 	echo "Updating depends (not updating hackfest-in-a-box itself)"
