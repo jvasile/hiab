@@ -1,9 +1,15 @@
-# Hackfest in a Box
+# HACKFEST IN A BOX
 
 Hackfest infrastructure as a standalone package you can just run on a
 LAN or mesh wireless at your hackfest.
 
 This file is mostly a TODO list for now.
+
+## INSTALL
+
+`git clone git://github.com/jvasile/hiab.git`
+
+`make all`
 
 ##  Jukebox
 
