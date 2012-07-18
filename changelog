@@ -1,0 +1,24 @@
+hackfest_in_a_box (0.0.2) unstable; urgency=low
+
+  * .gitignore, Makefile: git changelog, a bit of Makefile reorg
+  * README: sqlite3, not sqlite
+  * README, README.mdwn: github won't find it under the old name
+  * COPYING: agplv3
+  * Makefile: etc comes in the package, no need for Makefile to mkdir
+    it
+  * README.mdwn: install instructions
+  * Makefile: back out sqlite stuff for now
+  * .gitignore, Makefile: add var dir
+  * .gitignore, Makefile, README.mdwn, etc/etherpad-lite.json:
+    etherpad install and configure
+  * Makefile: add etherpad-lite
+  * .gitignore: git ignore
+
+ -- James Vasile <james@jamesvasile.com>  Wed, 18 Jul 2012 10:55:21 -0400
+
+hackfest_in_a_box (0.1.1) unstable; urgency=low
+
+  * README.mdwn: describe project
+
+ -- James Vasile <james@jamesvasile.com>  Thu, 12 Jul 2012 12:02:41 -0400
+
