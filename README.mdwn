@@ -1,14 +1,25 @@
 # Hackfest in a Box
 
+Hackfest infrastructure as a standalone package you can just run on a
+LAN or mesh wireless at your hackfest.
+
+This file is mostly a TODO list for now.
+
 ##  Jukebox
+
+ * link to from front page
 
 ## Etherpad
 
- * with wiki styling
+Install and run with `make etherpad`, then `cd vendor/etherpad-lite; bin/run.sh`.
 
- * Lightning Talk signup
+TODO: 
 
- * Human search engine query signup
+ * Need to make a defualt front page by editing etc/etherpad-lite.json
+ 
+ * Lightning Talk signup page
+
+ * Human search engine query signup page
 
 ## File dump
 
@@ -17,14 +28,40 @@
  * dir for presentations that automatically gets sent to the computer attached to the projector
 
  * dir for photos that get slurped into a hackfest gallery (serve a URL w/ slideshow)
+ 
+ * dir to put music for jukebox?
 
 ## Photo Gallery
 
-## Gateway
+ * pull photos from file dump (magic dir or just anything that looks like a pic?)
+ 
+ * link to from front page
+
+## IRC channel
+
+ * IRC server
+ 
+ * web-based IRC client
+ 
+ * link to from front page
+
+## Network Gateway
 
 Allows content to be viewed (rw or ro) by people via the internet
 
 
-Administrator gives a list of emails to the program.  Or users
-sign up with their email over the LAN.  They then get sent a
-magic url that is their login token.
+If we need logins, we can do something like: Administrator gives a
+list of emails to the program.  Or users sign up with their email over
+the LAN.  They then get sent a magic url that is their login token.
+
+
+
+## Dependencies
+
+ * node.js - Used by etherpad-lite
+
+ * npm - Needed to install node packages for etherpad-lite
+ 
+ * sqlite3 - Back end for etherpad-lite
+ 
+`apt-get install node.js npm sqlite`
