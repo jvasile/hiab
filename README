@@ -27,6 +27,8 @@ TODO:
 
  * Human search engine query signup page
 
+ * Photo blur me requests
+
 ## File dump
 
  * dir to put files to share
@@ -51,15 +53,22 @@ TODO:
  
  * link to from front page
 
+## Mic and Video camera 
+
+ * to hook up with another hackfest
+
+ * to record lightning talks
+
 ## Network Gateway
 
-Allows content to be viewed (rw or ro) by people via the internet
+ * Allows content to be viewed (rw or ro) by people via the internet
+
+ * Local domain (.hackfest) so computers can find each other?
 
 
 If we need logins, we can do something like: Administrator gives a
 list of emails to the program.  Or users sign up with their email over
 the LAN.  They then get sent a magic url that is their login token.
-
 
 
 ## Dependencies
