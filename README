@@ -77,6 +77,8 @@ the LAN.  They then get sent a magic url that is their login token.
 
  * npm - Needed to install node packages for etherpad-lite
  
- * sqlite3 - Back end for etherpad-lite
+ * sqlite3, libsqlite3-dev - Back end for etherpad-lite
+
+ * abiword - For etherpad-lite import/export
  
-`apt-get install node.js npm sqlite3`
+`apt-get install node.js npm libsqlite3-dev sqlite3 abiword`
