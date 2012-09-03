@@ -17,7 +17,7 @@ vendor/etherpad-lite:
 	mv vendor/etherpad-lite/var var/wiki_pages
 	ln -s ../../var/wiki_pages vendor/etherpad-lite/var
 	ln -s ../../etc/etherpad-lite.json vendor/etherpad-lite/settings.json
-	cd vendor/etherpad-lite; npm install sqlite3 node-gyp ep-linkify
+	cd vendor/etherpad-lite; npm install sqlite3 node-gyp ep_linkify
 
 vendor/etherpad-lite/node_modules/ep_linkify: vendor/etherpad-lite 
 	cd vendor/etherpad-lite; npm install ep_linkify
