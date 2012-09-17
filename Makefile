@@ -26,6 +26,7 @@ vendor/etherpad-lite/node_modules/node-gyp: vendor/etherpad-lite
 	cd vendor/etherpad-lite; npm install node-gyp
 
 vendor/etherpad-lite/node_modules/sqlite3: vendor/etherpad-lite
+	mkdir -p vendor/etherpad-lite/node_modules/sqlite3 node_modules/sqlite3
 	if `dpkg -l | grep -q libsqlite3-dev`; then echo libsqlite3-dev found... good; else echo "Need to install libsqlite3-dev"; exit 1; fi
 	cd vendor/etherpad-lite; npm install sqlite3
 	cd vendor/etherpad-lite/node_modules/sqlite3; npm install node-gyp
