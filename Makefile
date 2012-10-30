@@ -17,7 +17,7 @@ vendor/etherpad-lite:
 	mv vendor/etherpad-lite/var var/wiki_pages
 	ln -s ../../var/wiki_pages vendor/etherpad-lite/var
 	ln -s ../../etc/etherpad-lite.json vendor/etherpad-lite/settings.json
-	cd vendor/etherpad-lite; npm install sqlite3 node-gyp ep-linkify
+	cd vendor/etherpad-lite; npm install sqlite3 node-gyp ep_linkify
 
 vendor/etherpad-lite/node_modules/ep_linkify: vendor/etherpad-lite 
 	cd vendor/etherpad-lite; npm install ep_linkify
@@ -26,6 +26,7 @@ vendor/etherpad-lite/node_modules/node-gyp: vendor/etherpad-lite
 	cd vendor/etherpad-lite; npm install node-gyp
 
 vendor/etherpad-lite/node_modules/sqlite3: vendor/etherpad-lite
+	mkdir -p vendor/etherpad-lite/node_modules/sqlite3 node_modules/sqlite3
 	if `dpkg -l | grep -q libsqlite3-dev`; then echo libsqlite3-dev found... good; else echo "Need to install libsqlite3-dev"; exit 1; fi
 	cd vendor/etherpad-lite; npm install sqlite3
 	cd vendor/etherpad-lite/node_modules/sqlite3; npm install node-gyp
