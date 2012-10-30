@@ -65,6 +65,12 @@ TODO:
 
  * Local domain (.hackfest) so computers can find each other?
 
+## Key Party
+
+ * "Doodle" style sign-up and scheduler
+ 
+ * Visualizer to show name and Fingerprints for confirmation
+
 
 If we need logins, we can do something like: Administrator gives a
 list of emails to the program.  Or users sign up with their email over
